@@ -16,5 +16,5 @@ shell_exec("echo 'Hello World'")
 ## Possible improvments
 
 - Add Python typehints
-- Compute .output / .input on demand.
+- Compute .output / .error on demand.
 - Prevent injections.
