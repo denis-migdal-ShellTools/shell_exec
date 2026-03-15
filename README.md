@@ -18,7 +18,7 @@ from shlex import quote
 
 msg = "Hello 'World'"
 shell_exec(f"echo {msg}")
-``
+```
 
 ## Possible improvments
 
