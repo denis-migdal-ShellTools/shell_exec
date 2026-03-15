@@ -11,10 +11,16 @@ shell_exec("echo 'Hello World'")
 # <ExecResult exitcode=0 error='' output='Hello World'>
 ```
 
-⚠ You can use f-string to write the command line. However, this is unsafe if used with untrusted/external data.
+⚠ Use `shlex.quote` to prevent attacks by injections.
+```py
+import shell_exec
+from shlex import quote
+
+msg = "Hello 'World'"
+shell_exec(f"echo {msg}")
+``
 
 ## Possible improvments
 
 - Add Python typehints
 - Compute .output / .error on demand.
-- Prevent injections.
