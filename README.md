@@ -20,6 +20,8 @@ msg = "Hello 'World'"
 shell_exec(f"echo {msg}")
 ```
 
+💡 You can also use the standard input and the environment variables to pass input data in a safer way.
+
 ## Possible improvments
 
 - Add Python typehints
